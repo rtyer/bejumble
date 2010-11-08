@@ -1,0 +1,27 @@
+{
+	margin:0;
+	padding:0;
+}
+.word{
+	text-align:center;
+	width:75%;
+	font-size: 4em;
+	font-family: Century Gothic, sans-serif;
+	font-weight:bolder;
+	list-style-type:none;
+	padding: 0em;
+	border:1px solid #aaa;
+	margin:0;
+}
+.word .letter{
+	float:left;
+	border:3px solid black;
+	padding:.25em .45em;
+	margin:.1em;
+	border-radius: .25em;
+}
+
+.clear{
+	clear:both;
+}
+
