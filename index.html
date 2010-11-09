@@ -12,15 +12,17 @@
 				bejumble = new Bejumble($('wordContainer'));
 				bejumble.newWord("PLANT");
 			});
-		
+			
+			function changeWord(){
+				bejumble.clear();
+				bejumble.newWord($('aWord').get('value'));
+			}
 		
 		</script>
 	</head>
 	<body>
-		<ul id="wordContainer" class="word">
-			
-		</ul>
-		<button onclick="doclear();">clear</button>
-		<button onclick="newWord();">new word</button>
+		<ul id="wordContainer" class="word"></ul>
+		<input type="text" id="aWord"/>
+		<button onclick="changeWord()">new word</button>
 	</body> 
 </html>

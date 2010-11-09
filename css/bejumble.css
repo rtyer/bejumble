@@ -8,6 +8,7 @@
 	font-size: 4em;
 	font-family: Century Gothic, sans-serif;
 	font-weight:bolder;
+	text-transform: uppercase; 
 	list-style-type:none;
 	padding: 0em;
 	border:1px solid #aaa;
