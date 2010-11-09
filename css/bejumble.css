@@ -4,7 +4,6 @@
 }
 .word{
 	text-align:center;
-	width:75%;
 	font-size: 4em;
 	font-family: Century Gothic, sans-serif;
 	font-weight:bolder;
@@ -20,6 +19,7 @@
 	padding:.25em .45em;
 	margin:.1em;
 	border-radius: .25em;
+	-moz-border-radius:.25em;
 }
 
 .clear{

@@ -1,24 +1,33 @@
 <!DOCTYPE html> 
 <html lang="en">
 	<head>
-		<title>bejumble</title>
+		<title>bejumble</title>		
+		<link href="css/bejumble.css" rel="stylesheet" type="text/css">
 		<script src="lib/mootools-core-1.3-full-compat.js"></script>
 		<script src="lib/mootools-more.js"></script>		
-		<script src="lib/bejumble-core.js"></script>
-		<link href="css/bejumble.css" rel="stylesheet" type="text/css">
+		<script src="lib/bejumble-core.js"></script>		
 		<script type="text/javascript">
 			var bejumble;
+			var wordlist;
 			window.addEvent('domready', function(){
+				wordlist = new WordList();
+				
 				bejumble = new Bejumble($('wordContainer'));
-				bejumble.newWord("PLANT");
+				bejumble.addEvent('word.correct', guessCorrect.bind(this));
+				bejumble.newWord(wordlist.get());
 			});
 			
 			function changeWord(){
 				bejumble.clear();
 				bejumble.newWord($('aWord').get('value'));
 			}
+			
+			function guessCorrect(){
+				console.log("Guess Correct!");
+				$('wordContainer').highlight('#00FF00');
+			}
 		
-		</script>
+		</script>		
 	</head>
 	<body>
 		<ul id="wordContainer" class="word"></ul>
