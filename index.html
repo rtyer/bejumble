@@ -7,10 +7,10 @@
 		<script src="lib/bejumble-core.js"></script>
 		<link href="css/bejumble.css" rel="stylesheet" type="text/css">
 		<script type="text/javascript">
-			var bejumbler;
+			var bejumble;
 			window.addEvent('domready', function(){
-				bejumbler = new Bejumble($('wordContainer'));
-				bejumbler.newWord("test");
+				bejumble = new Bejumble($('wordContainer'));
+				bejumble.newWord("PLANT");
 			});
 		
 		
@@ -18,12 +18,6 @@
 	</head>
 	<body>
 		<ul id="wordContainer" class="word">
-			<li class="letter">P</li>
-			<li class="letter">L</li>
-			<li class="letter">A</li>
-			<li class="letter">N</li>
-			<li class="letter">T</li>
-			<li class="clear"/>
 			
 		</ul>
 		<button onclick="doclear();">clear</button>
