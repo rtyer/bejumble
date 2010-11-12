@@ -1,7 +1,7 @@
 
-# YourLib
+# bejumble
 
-Description
+Word scramble game with main game engine written in javascript.
 
 ## License 
 
