@@ -26,13 +26,19 @@
 			function guessCorrect(){
 				log("Guess Correct!");
 				$('wordContainer').highlight('#00FF00');
+				bejumble.clear();
+				bejumble.newWord(wordlist.get());
+			}
+			function showWord(){
+				alert(bejumble.show());
+				bejumble.clear();
+				bejumble.newWord(wordlist.get());
 			}
 		
 		</script>		
 	</head>
 	<body>
 		<ul id="wordContainer" class="word"></ul>
-		<input type="text" id="aWord"/>
-		<button onclick="changeWord()">new word</button>
+		<button onclick="showWord()">new word</button>
 	</body> 
 </html>
