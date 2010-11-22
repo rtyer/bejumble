@@ -25,10 +25,14 @@
 			
 			function guessCorrect(){
 				log("Guess Correct!");
-				$('wordContainer').highlight('#00FF00');
-				bejumble.clear();
-				bejumble.newWord(wordlist.get());
+				$$('.letter').highlight();
+				setTimeout(function newWord(){
+			      bejumble.clear();
+				   bejumble.newWord(wordlist.get());
+			   },500);				
 			}
+			
+			
 			function showWord(){
 				alert(bejumble.show());
 				bejumble.clear();
